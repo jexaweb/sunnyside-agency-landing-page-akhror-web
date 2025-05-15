@@ -3,10 +3,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./stayl.scss" />
+    <title>sunnyside-agency-landing-page-akhror-web</title>
+    <link rel="stylesheet" href="./css/stayl.min.css" />
   </head>
   <body>
-    <h1>scss</h1>
+    <header class="header">
+      <div class="header__container container">
+        <a href="">
+          <img
+            src="./images/logo.svg"
+            alt="sunnyside logo"
+            width="170"
+            height="33"
+        /></a>
+
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="#">About</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#"> Services</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Projects</a>
+            </li>
+            <li>
+              <a class="btn" href=".#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="show-btn" class="header__toggle-btn">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt=""
+            width="30"
+            height="18"
+          />
+        </button>
+      </div>
+      <div class="header__hidden">
+        <nav class="header__hidden__nav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="#">About</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Services</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Projects</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="btn" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero">
+        <h1 class="hero__name">WE ARE CREATIVES</h1>
+        <img
+          class="hero__img"
+          src="./images/icon-arrow-down.svg"
+          alt="arrow logo"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="content-grid container">
+        <div class="text-block">
+          <h2>
+            Transform your <br />
+            brand
+          </h2>
+          <p>
+            We are a full-service creative agency specializing in <br />
+            helping brands grow fast. Engage your clients through <br />
+            compelling visuals that do most of the marketing for you.
+          </p>
+          <a class="learn-more-text" href="#">LEARN MORE</a>
+          <div class="highlight"></div>
+        </div>
+        <div
+          class="image-block"
+          style="background-image: url('./images/desktop/image-transform.jpg')"
+        ></div>
+
+        <div
+          class="image-block"
+          style="background-image: url('./images/desktop/image-stand-out.jpg')"
+        ></div>
+        <div class="text-block">
+          <h2>
+            Stand out to the right <br />
+            audience
+          </h2>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a class="learn-more-text" href="#">LEARN MORE</a>
+          <span class="highlight"> </span>
+        </div>
+
+        <div class="card graphic-design">
+          <h3>Graphic Design</h3>
+          <p>
+            Great design makes you memorable. We deliver <br />
+            artwork that underscores your brand message <br />
+            and captures potential clients’ attention.
+          </p>
+        </div>
+        <div class="card photography">
+          <h3>Photography</h3>
+          <p>
+            Increase your credibility by getting the most <br />
+            stunning, high-quality photos that improve your <br />
+            business image.
+          </p>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h2 class="testimonials-title">Client Testimonials</h2>
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Emily R."
+              class="testimonial-img"
+              width="72"
+              height="72"
+            />
+            <p class="testimonial-text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h3 class="testimonial-name">Emily R.</h3>
+            <p class="testimonial-role">Marketing Director</p>
+          </div>
+          <div class="testimonial-card">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="Thomas S."
+              class="testimonial-img"
+              width="72"
+              height="72"
+            />
+            <p class="testimonial-text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h3 class="testimonial-name">Thomas S.</h3>
+            <p class="testimonial-role">Chief Operating Officer</p>
+          </div>
+          <div class="testimonial-card">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="Jennie F."
+              class="testimonial-img"
+              width="72"
+              height="72"
+            />
+            <p class="testimonial-text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h3 class="testimonial-name">Jennie F.</h3>
+            <p class="testimonial-role">Business Owner</p>
+          </div>
+        </div>
+      </section>
+      <div class="gallery">
+        <img
+          src="./images/desktop/image-gallery-milkbottles.jpg"
+          alt="milkbottles img"
+        />
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="orange img" />
+
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="cone img" />
+        <img
+          src="./images/desktop/image-gallery-sugarcubes.jpg"
+          alt="sugarcubes img"
+        />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img src="./images/sunnyside.svg" alt="sunnyside logo" />
+        <nav class="footer--link">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </nav>
+        <div class="social-icons">
+          <a class="f" href=""
+            ><img src="./images/icon-facebook.svg" alt="icon-facebook"
+          /></a>
+          <a href=""
+            ><img src="./images/icon-instagram.svg" alt="icon-instagram"
+          /></a>
+          <a href=""
+            ><img src="./images/icon-twitter.svg" alt="icon-twitter"
+          /></a>
+          <a href=""
+            ><img src="./images/icon-pinterest.svg" alt="icon-pinterest"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggleBtn = document.querySelector(".header__toggle-btn");
+      const hiddenMenu = document.querySelector(".header__hidden");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        hiddenMenu.classList.toggle("show");
+        body.classList.toggle("no-scroll");
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,131 @@
+.header {
+  background-image: url(../images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+  padding: 4rem 5rem;
+  padding-top: 3.4rem;
+  padding-bottom: 80rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.sitenav__list {
+  display: flex;
+  gap: 3rem;
+}
+.sitenav__link {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: -0.13px;
+  color: #ffffff;
+}
+.header__toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  z-index: 100;
+}
+.header__hidden {
+  position: fixed; /* fixed bo‘lishi kerak! */
+  top: 6rem;
+  left: 0;
+  bottom: 6rem;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  transform: translateX(100%);
+  z-index: 99;
+  overflow: hidden;
+}
+.header__hidden.show {
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 746px) {
+  .header {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+  }
+  .header__toggle-btn {
+    display: block;
+  }
+  .sitenav {
+    display: none;
+  }
+  .sitenav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .sitenav__link {
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: -0.13px;
+    color: #808397;
+  }
+  .btn {
+    color: #24303e;
+    background-color: #fbd600;
+    font-weight: 700;
+    font-size: 4.5rem;
+    padding: 1.6rem 3rem.5rem 3.2rem;
+  }
+  .hero__name {
+    font-size: 3.8rem !important;
+  }
+  .hero {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    padding: 1.5rem 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header__toggle-btn {
+    display: block;
+  }
+  .sitenav {
+    display: none;
+  }
+  .hero__name {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.hero {
+  text-align: center;
+  margin-top: 10rem;
+}
+.hero__name {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 5.6rem;
+  letter-spacing: 1rem;
+  padding-bottom: 15rem;
+
+  color: #ffffff;
+}

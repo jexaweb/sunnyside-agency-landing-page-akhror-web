@@ -1,0 +1,44 @@
+/* CSS */
+.footer {
+  background-color: #90d4c5;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.footer-content nav {
+  margin: 4rem 0;
+}
+.footer--link a {
+  margin: 0 2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1rem;
+  letter-spacing: -0.13px;
+  color: #458d7e;
+  text-decoration: none;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.social-icons a {
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.f {
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons img {
+  margin: 0 0.8rem;
+  width: 2rem;
+  height: 2rem;
+  &:hover {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,28 @@
+.btn {
+  color: #24303e;
+  background-color: #ffffff;
+  border-radius: 2.8rem;
+  padding: 1.6rem 3rem 1.5rem 3.2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  letter-spacing: -0.11px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #ffffff;
+    background-color: #24303e;
+  }
+}
+@media screen and (max-width: 746px) {
+  .btn {
+    color: #24303e;
+    background-color: #fbd600;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn {
+    color: #24303e;
+    background-color: #fbd600;
+  }
+}
