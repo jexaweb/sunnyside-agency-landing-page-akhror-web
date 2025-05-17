@@ -34,14 +34,17 @@
   margin-top: 20px;
 }
 
-.social-icons img {
-  margin: 0 0.8rem;
-  width: 2rem;
-  height: 2rem;
+.iconi__color {
+  gap: 10rem;
+  font-size: 2.4rem;
+  color: #837d88;
+
   &:hover {
     color: #ffffff;
   }
 }
-
+.footer-socials a {
+  padding-right: 1rem;
+}
 @media screen {
 }
